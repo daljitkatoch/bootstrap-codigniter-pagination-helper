@@ -1,14 +1,15 @@
 # Bootstrap codigniter pagination helper
-create a helper file in application\helpers with the name pagination_helper.php
 
 # Need of this helper
-It would make easy you to call just helper and pass the required parameter instead of doing code again and again in each page.
+It would make easy to you call this helper and pass the required parameter instead of doing code again and again in each page.
 
+# Helper file location in your project
+create a helper file in your project folder. **path:** application\helpers\pagination_helper.php 
 
 # How to call this helper
-call the helper in by placing this code in your construct. **$this->load->helper('pagination');**
+You can call this helper by placing this code in the construct of class (**$this->load->helper('pagination');**) or you can also call it on the autoloader file. 
 
-and call the function like this
+You can call this helper's function like this in your class function
 **pagination($url, $rowscount, $perpage, 2);**
 
 Where **$url** is url of the current page
